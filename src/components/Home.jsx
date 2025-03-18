@@ -14,7 +14,7 @@ import hinata from "../assets/images/hinata.png";
 function Home() {
   return (
     <>
-      <div className="w-screen  py-1 px-4 md:px-20 flex flex-col md:flex-row justify-center items-center">
+      <div name="Home" className="w-screen  py-1 px-4 md:px-20 flex flex-col md:flex-row justify-center items-center">
         <div className="md:w-1/2 md:h-[90vh] md:mt-20 order-2 md:order-1">
           <span className="text-xl px-4">Welcome to my feed</span>
           <div className="flex text-xl md:text-4xl space-y-2 px-4 ">
@@ -78,7 +78,7 @@ function Home() {
         <div className=" w-screen h-1/2 md:w-1/2 order-1 md:order-2">
         <img className=" md:h-[90vh] md:w-[90%] md:ml-15 md:" src={hinata} alt="" /></div>
       </div>
-      <hr className="relative top-[-10vh]"/>
+      <hr className="relative top-[10vh] md:top-[-10vh]"/>
     </>
   );
 }

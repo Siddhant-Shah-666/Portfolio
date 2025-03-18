@@ -76,7 +76,7 @@ function Skills() {
     ]
   return (
     <div>
-      <div className="w-screen  ">
+      <div name="Skills" className="w-screen py-5 relative top-[10vh] md:top-[-5vh]">
         <h2 className='text-3xl font-bold mb-10 text-center'>Skills</h2>
         <div className=" grid grid-cols-1 md:grid-cols-4 sm:grid-cols-3 gap-5 px-10 md:px-20">
             {
@@ -92,6 +92,7 @@ function Skills() {
             }
         </div>
       </div>
+      <hr className='relative top-[10vh] md:top-0'/>
     </div>
   )
 }
