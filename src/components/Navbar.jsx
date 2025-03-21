@@ -11,13 +11,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar w-screen py-1 px-4 md:px-20 shadow-md h-16 fixed top-0 bg-white z-100">
+      <div className="navbar w-screen py-1 px-4 md:px-20 shadow-md shadow-white h-16 fixed top-0 z-100">
         <div className="flex justify-between items-center h-16">
           <div className="right-box flex space-x-2">
-            <img className="h-10 w-10" src={icon} alt="" />
-            <h3>
-              Sid
-              <p>Webdeveloper</p>
+            <img className="h-10 w-10 flex invert brightness-0 contrast-100" src={icon} alt="" />
+            <h3 className="flex justify-between items-center">
+              Portfolio
             </h3>
           </div>
           <div className="desktop left-box">
