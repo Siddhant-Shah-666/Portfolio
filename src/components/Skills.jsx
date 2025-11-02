@@ -1,20 +1,42 @@
 import React from 'react'
+import {motion} from "motion/react"
 
 import reactpng from "../assets/images/react2.png";
 import node from "../assets/images/node2.png";
 import mongo from "../assets/images/mongo2.png";
 import express from "../assets/images/express2.png";
-import hinata from "../assets/images/hinata.png";
 import html from "../assets/images/html.png";
 import css from "../assets/images/css.png";
 import js from "../assets/images/js.png";
 import tailwind from "../assets/images/tailwind.png";
-import bootstrap from "../assets/images/bootstrap.png";
-import php from "../assets/images/php.png";
-import mysql from "../assets/images/mysql.png";
+import gsap from "../assets/images/gsap.png";
+import framer from "../assets/images/framer.png"
+
 
 
 function Skills() {
+
+ const skillContainerVariant = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 1.5,  
+      staggerChildren: 0.3
+    }
+  }
+};
+const skillItemVariants = {
+
+  visible: {
+    scale: [1,0.6,1.5,1],
+    opacity:1,
+    // opacity: [1,0.7,1],
+    // rotate:360,
+    transition: { duration: .6 }
+  }
+};
+
     const skills=[
         {
             id:1,
@@ -58,13 +80,13 @@ function Skills() {
         },
         {
             id:9,
-            logo:php,
-            name:"Php"
+            logo:gsap,
+            name:"GSAP"
         },
         {
             id:10,
-            logo:mysql,
-            name:"MySql"
+            logo:framer,
+            name:"Framer Motion"
         }, 
            
 
@@ -73,19 +95,26 @@ function Skills() {
     <div>
       <div name="Skills" className="w-screen py-5 relative top-[10vh] md:top-[-5vh]">
         <h2 className='text-3xl font-bold mb-10 text-center'>Skills</h2>
-        <div className=" grid grid-cols-2 md:grid-cols-5 sm:grid-cols-3 gap-5 px-10 md:px-20">
+        <motion.div
+         variants={skillContainerVariant}
+         initial="hidden"
+         whileInView="visible" 
+        viewport={{ once: true }}
+        className=" grid grid-cols-2 md:grid-cols-5 sm:grid-cols-3 gap-6 px-10 md:px-20"
+        >
             {
                 skills.map(({id,logo,name})=>
                     (
-                        <div className=" flex flex-col justify-center items-center bg-red-300 p-5 rounded-xl hover:scale-110 duration-300 border-[2px] shadow-xl bg-white/20 backdrop-blur-xl border border-white/20 " key={id}>
-                            <img className='h-30 w-30' src={logo} alt="" />
+                        <motion.div variants={skillItemVariants}
+                         className=" flex flex-col justify-center items-center  p-5 rounded-xl hover:scale-110 duration-300  bg-slate-800/30 backdrop-blur-xl border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_]  hover:shadow-[0_0_30px_rgba(0,255,255,1)]  " key={id}>
+                            <img className='h-30 w-30' src={logo} alt="hhh" />
                             <h3>{name}</h3>
-                            <div class="absolute inset-0 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/asfalt-light.png')] opacity-10"></div>
-                        </div>
+                            <div className="absolute inset-0 pointer-events-none  opacity-10"></div>
+                        </motion.div>
                     )
                 )
             }
-        </div>
+        </motion.div>
       </div>
       <hr className='relative top-[10vh] md:top-0'/>
     </div>

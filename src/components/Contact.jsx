@@ -1,29 +1,41 @@
 import React from "react";
+import {motion} from 'motion/react'
 import plane from "../assets/images/plane.png";
 
 function Contact() {
   return (
     <>
-      <div name="Contacts" className="w-screen p-5 flex gap-10 p-10 flex justify-center items-center relative top-[15vh] md:top-0">
-        <div className=" hidden sm:hidden md:flex flex-col h-[90vh] w-[45vw] justify-center items-center ">
-            <h2 className="text-bold font-xl;">contact me </h2>
+      <div name="Contacts" className="w-screen p-5 flex gap-10 p-10 flex justify-center items-center relative top-[15vh] md:top-0 relative">
+        <div className=" hidden sm:hidden md:flex flex-col h-[90vh] w-[45vw] justify-center items-center gap-3  ">
+            <h2 className="font-bold text-[4vh]  ;">contact me </h2>
             <p>Lorem ipsumt molestias autem aperiam tenetur tempora assumenda?</p>
-            <img className="" src={plane} alt="" />
+            <motion.img
+            animate={{
+              y:[2,-17,3,-13],
+              x:[2,-14,3,-9],
+              
+            }}
+            transition={{
+              duration:3,
+              ease:"easeInOut",
+              repeat:Infinity,
+              repeatType:"reverse"
+            }}
+            className="w-[28vw] mt-5" src={plane} alt="" />
         </div>
-        <div className="w-[90vw] h-[70vh] md:w-[45vw] md:h-[90vh] flex flex-col justify-center items-center  ">
+        <div className="w-[90vw] h-[70vh] md:w-[35vw] md:h-[65vh] rounded-xl flex flex-col justify-center items-center  bg-slate-800/30 backdrop-blur-xl border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_] ">
         <h2 className="text-xl md:hidden text-center text-white m-3 font-bold;">contact me </h2>
-        <form action="https://getform.io/f/bvrwppgb" method="POST" className="w-[90%]  p-5">
-            <label htmlFor="name" className="block"> Name :
-            </label>
-            <input type="text" id="name" name="name" className="bg-white w-[90%]  border border-gray-300 p-2 my-2 font-xl rounded-md " required/>
-            <label htmlFor="email" className="block"> Email :
-            </label>
-            <input type="email" id="email" name="email" className="bg-white w-[90%] border border-gray-300 p-2 my-2 font-xl rounded-md " required/>
-            <b className="font-semibold  mb-3 text-justify text-sm text-blue-500 block">Be assure, we will not share your email with anyone..!</b>
-            <label htmlFor="message" className="block"> Your message :
-            </label>
-           <textarea name="message" id="message" className="border border-gray-300 bg-white h-[10vh] md:h-[20vh] w-[90%]  p-2 my-2 font-xl rounded-md resize-none" required></textarea>
-           <input type="submit" value="Send Message" className=" h-7 w-30 md:h-15 md:w-50 bg-blue-600 md:p-5 rounded-xl text-white text-semibold md:font-bold "/>
+        <form action="https://getform.io/f/bvrwppgb" method="POST" className="w-[90%] font-semibold  p-5 flex flex-col justify-center items-center text-cyan-300">
+            
+              <input type="text" id="name" name="name" placeholder="Enter Your Name" className="bg-slate-950/40 w-[80vw] md:w-[28vw] text-cyan-300  border  p-2 my-2 font-xl rounded-md " required/>
+
+              <input type="email" id="email" name="email" placeholder="Enter Your E-mail" className="bg-slate-950/ w-[80vw] md:w-[28vw] text-cyan-300 border  p-2 my-2  font-xl rounded-md " required/>
+        
+            <b className="font-semibold  mb-3 text-justify text-sm text-cyan-500 block">Be assure, your email will not be shared with anyone..!</b>
+           
+           <textarea name="message" id="message" placeholder="Type Your Message" className="border  bg-slate-950/40 h-[10vh] md:h-[15vh] w-[80vw] md:w-[28vw]  p-2 my-2 text-cyan-300 font-xl rounded-md resize-none" required></textarea>
+
+           <input type="submit" value="Send Message" className=" h-9 w-[80vw] md:h-10 md:w-[28vw] bg-cyan-800 md:p-1 my-2 rounded-xl text-white text-semibold md:font-bold border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_] hover:bg-cyan-400"/>
             
         </form>
 

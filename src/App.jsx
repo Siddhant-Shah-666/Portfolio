@@ -1,26 +1,64 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react';
+import FOG from "vanta/dist/vanta.fog.min";
+import * as THREE from "three";
 
-import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const vantaRef = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(null); // Keep this state
+
+  useEffect(() => {
+    // Check if the effect hasn't been created yet
+    if (!vantaEffect) {
+      // Create and set the effect in state
+      setVantaEffect(FOG({
+        el: vantaRef.current,
+        THREE,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x08f2f2, 
+        midtoneColor: 0x110b0b,
+        lowlightColor: 0x0d072a, 
+        baseColor: 0x110808
+      }));
+    }
+
+    return () => {
+      if (vantaEffect) {
+        vantaEffect.destroy();
+      }
+    };
+  }, [vantaEffect]); 
 
   return (
     <>
-     <Navbar/>
-     <Home/>
-     <Skills/>
-     <Projects/>
-     <Contact/>
-     <Footer/>
+     
+      <div 
+        className="w-full h-screen fixed top-0 left-0 z-0" 
+        ref={vantaRef}>
+      </div>
+
+     
+      <div className="relative z-10 font-bold">
+        <Navbar />
+        <Home />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
