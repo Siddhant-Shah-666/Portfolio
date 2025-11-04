@@ -71,7 +71,6 @@ function Home() {
             className="flex text-xl md:text-4xl space-y-2 px-4 "
           >
             <motion.h1>Hello, i'm a </motion.h1>
-            {/* <span className="text-red-500 font-600 space-y-2 ml-2">developer</span> */}
             <ReactTyped
               className="text-cyan-300 font-600 space-y-2 ml-2"
               strings={["Developer", "Programmer", "Designer"]}
@@ -85,11 +84,10 @@ function Home() {
             variants={infoItemVariants}
             className=" mt-4 mb-4 md:mt-10 mb-5 text-sm md:text-md px-5 text-justify text-white font-semibold text-shadow-md"
           >
-            I’m a passionate MERN stack developer with strong skills in HTML,
-            CSS, JavaScript, PHP, MySQL, Node.js, and MongoDB. I enjoy building
+            I’m a passionate MERN stack developer with strong skills in **HTML,
+            CSS, JavaScript, PHP, MySQL, Node.js, and MongoDB**. I enjoy building
             responsive and dynamic web applications that provide a smooth user
-            experience. Currently, I’m working on projects like a tourism
-            website, a bus e-ticketing system, and an e-commerce platform. I'm
+            experience. Currently, I’m working on projects like a Bug tracking , a Bus e-ticketing system, and an E-commerce platform. I'm
             constantly learning and improving my skills, especially in React and
             modern web technologies, to stay updated with the latest trends in
             web development.
