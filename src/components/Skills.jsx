@@ -86,7 +86,7 @@ const skillItemVariants = {
         {
             id:10,
             logo:framer,
-            name:"Framer Motion"
+            name:"Framer.js"
         }, 
            
 

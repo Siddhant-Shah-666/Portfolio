@@ -125,7 +125,7 @@ function Navbar() {
             variants={navContainerVariant}
             initial="hidden"
             animate="visible"
-             className="md:hidden text-slate-800 md:text-white h-screen font-700 flex flex-col justify-center items-center space-y-3 fixed top-0 left-0 right-0 font-semibold text-lg bg-slate-600">
+             className="md:hidden text-slate-800 md:text-white h-screen font-700 flex flex-col justify-center items-center space-y-3 fixed top-0 left-0 right-0 font-semibold text-lg bg-slate-950/40 backdrop-blur-xl">
               <motion.li variants={navItemVariants}>
                 <Link
                   to="Home"

@@ -92,8 +92,8 @@ function Home() {
             modern web technologies, to stay updated with the latest trends in
             web development.
           </motion.h6>
-          
-          <div className="h-[20vh] w-[100vw] mt-15 md:h-[25vh] md:w-120  flex flex-col justify-center items-center  gap-3  ">
+
+          <div className="h-[20vh] w-[100vw] mt-15 md:h-[25vh] md:w-120  flex flex-col justify-center items-start  gap-3  ">
             <div className="w-[100vw] md:w-[25vw] h-15 flex gap-3">
               <a
                 href={resume}
@@ -124,16 +124,16 @@ function Home() {
                 className="h-15 w-50  flex list-none justify-center items-center space-x-2"
               >
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={reactpng} alt="" />
+                  <img className="h-9 w-10 invert brightness-0 contrast-100 " src={reactpng} alt="" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={node} alt="" />
+                  <img className="h-9 w-10 invert brightness-0 contrast-100 " src={node} alt="" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={express} alt="" />
+                  <img className="h-9 w-10 invert brightness-0 contrast-100 " src={express} alt="" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10" src={mongo} alt="" />
+                  <img className="h-9 w-10 invert brightness-0 contrast-100" src={mongo} alt="" />
                 </motion.li>
               </motion.ul>
             </motion.div>

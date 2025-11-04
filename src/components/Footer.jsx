@@ -13,17 +13,17 @@ function Footer() {
             <img className="h-10 w-10 invert brightness-0 contrast-100 " src={insta} alt="" />
           </li>
           <li>
-            <img className="h-11 w-11 invert brightness-0 contrast-100" src={whatsapp} alt="" />
+            <img className="h-11 w-11 invert brightness-0 contrast-100 " src={whatsapp} alt="" />
           </li>
           <li>
-            <img className="h-8 w-8 invert brightness-0 contrast-100" src={gmail} alt="" />
+            <img className="h-8 w-8 invert brightness-0 contrast-100 " src={gmail} alt="" />
           </li>
           <li>
-            <img className="h-10 w-10 invert brightness-0 contrast-100" src={linkedin} alt="" />
+            {/* <img className="h-10 w-10" src={linkedin} alt="" /> */}
           </li>
         </ul>
-        <h3 className="font-semibold text-md md:text-xl">A Developer Dedicated to Clean Code and Great Design.</h3>
-        <h4 className="text-md text-white">Designed and Developed by **Siddhant Shah**.</h4>
+        <h3 className="font-bold text-md md:text-xl">A Developer Dedicated to Clean Code and Great Design.</h3>
+        <h4 className=" text-s md:text-md text-white">Designed and Developed by <strong>Siddhant Shah.</strong></h4>
       </footer>
     </>
   );

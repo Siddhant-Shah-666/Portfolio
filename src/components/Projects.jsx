@@ -123,7 +123,7 @@ function Projects() {
               <h3 className="text-2xl font-bold  text-center ">
                 Retro Bus - An E-ticketing website
               </h3>
-              <h6 className="hidden md:block text-sm md:text-md text-justify text-cyan-300">
+              <h6 className="hidden md:block text-sm md:text-md md:text-semibold text-justify text-cyan-300">
                 <p className="text-sm md:text-md text-justify text-cyan-300 mb-4">
                   An online platform for easy and automated bus ticket booking
                   and scheduling.
