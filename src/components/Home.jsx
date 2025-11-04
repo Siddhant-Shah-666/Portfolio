@@ -117,8 +117,8 @@ function Home() {
             </div>
 
 
-            <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-center space-y-2 ml-[15vw] md:ml-[5vw]">
-              <motion.h3 className="ml-3">Workink on</motion.h3>
+            <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-start space-y-2 ">
+              <motion.h3 className="ml-0">Workink on</motion.h3>
               <motion.ul
                 variants={skillContainerVariant}
                 initial="hidden"
