@@ -24,7 +24,7 @@ function Contact() {
             className="w-[28vw] mt-5" src={plane} alt="" />
         </div>
         <div className="w-[90vw] h-[50vh] md:w-[35vw] md:h-[65vh] rounded-xl flex flex-col justify-center items-center  bg-slate-800/30 backdrop-blur-xl border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_] ">
-        <h2 className="text-xl md:hidden text-center text-white mt-5 mb-3 font-bold;">Contact me..! </h2>
+        <h2 className="text-xl md:hidden text-center text-white mt-[5vh] mb-3 font-bold;">Contact me..! </h2>
         <form action="https://getform.io/f/bvrwppgb" method="POST" className="w-[90%] font-semibold  p-5 flex flex-col justify-center items-center text-cyan-300">
             
               <input type="text" id="name" name="name" placeholder="Enter Your Name" className="bg-slate-950/40 w-[80vw] md:w-[28vw] text-cyan-300  border  p-2 my-2 font-xl rounded-md " required/>

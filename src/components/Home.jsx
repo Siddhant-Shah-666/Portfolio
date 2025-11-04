@@ -106,14 +106,14 @@ function Home() {
                 RESUME
               </a>
 
-              <div
+              <a
                 href={certificate}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10  w-[30vw] md:w-[10vw] bg-gray-300 rounded-full p-2  flex  justify-center items-center  shadow-lg"
               >
                 CERTIFICATE
-              </div>
+              </a>
             </div>
 
 
