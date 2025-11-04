@@ -84,13 +84,15 @@ function Home() {
             variants={infoItemVariants}
             className=" mt-4 mb-4 md:mt-10 mb-5 text-sm md:text-md px-5 text-justify text-white font-semibold text-shadow-md"
           >
-            I’m a passionate MERN stack developer with strong skills in **HTML,
-            CSS, JavaScript, PHP, MySQL, Node.js, and MongoDB**. I enjoy building
-            responsive and dynamic web applications that provide a smooth user
-            experience. Currently, I’m working on projects like a Bug tracking , a Bus e-ticketing system, and an E-commerce platform. I'm
-            constantly learning and improving my skills, especially in React and
-            modern web technologies, to stay updated with the latest trends in
-            web development.
+            I’m a passionate <strong>MERN stack</strong> developer with strong skills in 
+  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, 
+  <strong>MySQL</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I enjoy building 
+  <strong>responsive</strong> and <strong>dynamic web applications</strong> that provide a 
+  <strong>smooth user experience</strong>. Currently, I’m working on projects like a 
+  <strong>Bug tracking</strong> system, a <strong>Bus e-ticketing</strong> system, and an 
+  <strong>E-commerce</strong> platform. I'm constantly learning and improving my skills, 
+  especially in <strong>React</strong> and <strong>modern web technologies</strong>, to stay updated 
+  with the latest trends in <strong>web development</strong>.
           </motion.h6>
 
           <div className="px-4 mt-15  flex flex-col justify-center items-start  gap-3  ">
@@ -115,7 +117,7 @@ function Home() {
             </div>
 
 
-            <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-center space-y-2">
+            <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-center space-y-2 ml-[15vw] md:ml-[5vw]">
               <motion.h3 className="ml-3">Workink on</motion.h3>
               <motion.ul
                 variants={skillContainerVariant}
