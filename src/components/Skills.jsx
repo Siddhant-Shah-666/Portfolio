@@ -1,89 +1,124 @@
 import React from 'react'
-import { motion } from "framer-motion"
+import {motion} from "motion/react"
 
-// --- 1. IMPORT SVG COMPONENTS ---
-import { default as ReactPng } from "../assets/images/react.svg?react";
-import { default as Node } from "../assets/images/nodedotjs.svg?react";
-import { default as Mongo } from "../assets/images/mongodb.svg?react";
-import { default as Express } from "../assets/images/express.svg?react";
-import { default as Html } from "../assets/images/html5.svg?react";
-import { default as Css } from "../assets/images/css.svg?react";
-import { default as Js } from "../assets/images/javascript.svg?react";
-import { default as Tailwind } from "../assets/images/tailwindcss.svg?react";
-import { default as Gsap } from "../assets/images/gsap.svg?react";
-import { default as Framer } from "../assets/images/framer.svg?react";
+import reactpng from "../assets/images/react.svg";
+import node from "../assets/images/nodedotjs.svg";
+import mongo from "../assets/images/mongodb.svg";
+import express from "../assets/images/express.svg";
+import html from "../assets/images/html5.svg";
+import css from "../assets/images/css.svg";
+import js from "../assets/images/javascript.svg";
+import tailwind from "../assets/images/tailwindcss.svg";
+import gsap from "../assets/images/gsap.svg";
+import framer from "../assets/images/framer.svg"
 
-
-// --- 2. CREATE A MAP OF COMPONENTS (outside or inside the function) ---
-const LogoMap = {
-    Html: Html,
-    Css: Css,
-    Js: Js,
-    React: ReactPng,
-    Tailwind: Tailwind,
-    Node: Node,
-    Express: Express,
-    Mongo: Mongo,
-    Gsap: Gsap,
-    Framer: Framer,
-};
 
 
 function Skills() {
-    // ... (Your variant definitions remain the same)
-    const skillContainerVariant = { /* ... */ };
-    const skillItemVariants = { /* ... */ };
 
-    // --- 3. DEFINE SKILLS ARRAY WITH STRING KEYS ---
-    const skills = [
-        // Store a simple string key that matches the LogoMap keys
-        { id: 1, key: "Html", name: "Html" }, 
-        { id: 2, key: "Css", name: "Css" },
-        { id: 3, key: "Js", name: "JavaScript" },
-        { id: 4, key: "React", name: "React" },
-        { id: 5, key: "Tailwind", name: "Tailwind" },
-        { id: 6, key: "Node", name: "Node.js" },
-        { id: 7, key: "Express", name: "Express.js" },
-        { id: 8, key: "Mongo", name: "MongoDb" },
-        { id: 9, key: "Gsap", name: "GSAP" },
-        { id: 10, key: "Framer", name: "Framer Motion" },
-    ];
+ const skillContainerVariant = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 1.5,  
+      staggerChildren: 0.3
+    }
+  }
+};
+const skillItemVariants = {
 
-    return (
-        <div>
-            {/* ... outer structure ... */}
-            <motion.div
-                variants={skillContainerVariant}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className=" grid grid-cols-2 md:grid-cols-5 sm:grid-cols-3 gap-6 px-10 md:px-20"
-            >
-                {
-                    // --- 4. RENDER: Use the key to look up the component function ---
-                    skills.map(({ id, key, name }) => {
-                        // CRITICAL: Look up the component using the string key
-                        const LogoComponent = LogoMap[key]; 
+  visible: {
+    scale: [1,0.6,1.5,1],
+    opacity:1,
+    // opacity: [1,0.7,1],
+    // rotate:360,
+    transition: { duration: .6 }
+  }
+};
 
-                        return (
-                            <motion.div 
-                                variants={skillItemVariants}
-                                className=" flex flex-col justify-center items-center p-5 rounded-xl hover:scale-105 duration-300 bg-slate-800/30 backdrop-blur-xl border border-cyan-400 shadow-cyan-300 shadow-[0_0_15px_] hover:shadow-[0_0_30px_rgba(0,255,255,1)]" 
-                                key={id}
-                            >
-                                {/* This will now correctly render the SVG component */}
-                                <LogoComponent className='h-12 w-12 text-cyan-400 mb-2' /> 
-                                
-                                <h3 className="text-white text-lg font-semibold">{name}</h3>
-                                <div className="absolute inset-0 pointer-events-none opacity-10"></div>
-                            </motion.div>
-                        )
-                    })
-                }
-            </motion.div>
-            {/* ... closing tags ... */}
-        </div>
-    )
+    const skills=[
+        {
+            id:1,
+            logo:html,
+            name:"Html"
+        },
+        {
+            id:2,
+            logo:css,
+            name:"Css"
+        },
+        {
+            id:3,
+            logo:js,
+            name:"JavaScript"
+        },
+        {
+            id:4,
+            logo:reactpng,
+            name:"React"
+        },
+        {
+            id:5,
+            logo:tailwind,
+            name:"Tailwind"
+        },
+        {
+            id:6,
+            logo:node,
+            name:"Node.js"
+        },
+        {
+            id:7,
+            logo:express,
+            name:"Express.js"
+        },
+        {
+            id:8,
+            logo:mongo,
+            name:"MongoDb"
+        },
+        {
+            id:9,
+            logo:gsap,
+            name:"GSAP"
+        },
+        {
+            id:10,
+            logo:framer,
+            name:"Framer Motion"
+        }, 
+           
+
+    ]
+  return (
+    <div>
+      <div name="Skills" className="w-screen py-5 relative top-[10vh] md:top-[-5vh]">
+        <h2 className='text-3xl font-bold mb-10 text-center'>Skills</h2>
+        <motion.div
+         variants={skillContainerVariant}
+         initial="hidden"
+         whileInView="visible" 
+        viewport={{ once: true }}
+        className=" grid grid-cols-2 md:grid-cols-5 sm:grid-cols-3 gap-6 px-10 md:px-20"
+        >
+            {
+                skills.map(({id,logo,name})=>
+                    (
+                        <motion.div variants={skillItemVariants}
+                         className=" flex flex-col justify-center items-center  p-5 rounded-xl hover:scale-110 duration-300  bg-slate-800/30 backdrop-blur-xl border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_]  hover:shadow-[0_0_30px_rgba(0,255,255,1)]  " key={id}>
+                            <img className='h-25 md:h-30 w-30 text-cyan-400 invert brightness-0 contrast-100' src={logo} alt="logo" />
+                            <h3>{name}</h3>
+                            <div className="absolute inset-0 pointer-events-none  opacity-10"></div>
+                        </motion.div>
+                    )
+                )
+            }
+        </motion.div>
+      </div>
+      <hr className='relative top-[10vh] md:top-0'/>
+    </div>
+  )
 }
 
 export default Skills
