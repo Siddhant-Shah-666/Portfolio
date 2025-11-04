@@ -22,8 +22,8 @@ function Footer() {
             <img className="h-10 w-10" src={linkedin} alt="" />
           </li>
         </ul>
-        <h3 className="font-semibold text-md md:text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
-        <h4 className="text-md">Lorem ipsum dolor sit.</h4>
+        <h3 className="font-semibold text-md md:text-xl">A Developer Dedicated to Clean Code and Great Design.</h3>
+        <h4 className="text-md text-white">Designed and Developed by **Siddhant Shah**.</h4>
       </footer>
     </>
   );

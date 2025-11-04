@@ -44,7 +44,7 @@ function App() {
     <>
      
       <div 
-        className="w-full h-screen fixed top-0 left-0 z-0" 
+        className="w-full h-full fixed top-0 left-0 z-[-1]" 
         ref={vantaRef}>
       </div>
 

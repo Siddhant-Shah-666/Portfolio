@@ -1,16 +1,16 @@
 import React from 'react'
 import {motion} from "motion/react"
 
-import reactpng from "../assets/images/react2.png";
-import node from "../assets/images/node2.png";
-import mongo from "../assets/images/mongo2.png";
-import express from "../assets/images/express2.png";
-import html from "../assets/images/html.png";
-import css from "../assets/images/css.png";
-import js from "../assets/images/js.png";
-import tailwind from "../assets/images/tailwind.png";
-import gsap from "../assets/images/gsap.png";
-import framer from "../assets/images/framer.png"
+import reactpng from "../assets/images/react.svg";
+import node from "../assets/images/nodedotjs.svg";
+import mongo from "../assets/images/mongodb.svg";
+import express from "../assets/images/express.svg";
+import html from "../assets/images/html5.svg";
+import css from "../assets/images/css.svg";
+import js from "../assets/images/javascript.svg";
+import tailwind from "../assets/images/tailwindcss.svg";
+import gsap from "../assets/images/gsap.svg";
+import framer from "../assets/images/framer.svg"
 
 
 
@@ -107,7 +107,7 @@ const skillItemVariants = {
                     (
                         <motion.div variants={skillItemVariants}
                          className=" flex flex-col justify-center items-center  p-5 rounded-xl hover:scale-110 duration-300  bg-slate-800/30 backdrop-blur-xl border  border-cyan-400 shadow-cyan-300  shadow-[0_0_15px_]  hover:shadow-[0_0_30px_rgba(0,255,255,1)]  " key={id}>
-                            <img className='h-30 w-30' src={logo} alt="hhh" />
+                            <img className='h-25 md:h-30 w-30 text-cyan-400' src={logo} alt="logo" />
                             <h3>{name}</h3>
                             <div className="absolute inset-0 pointer-events-none  opacity-10"></div>
                         </motion.div>

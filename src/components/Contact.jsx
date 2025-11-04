@@ -7,7 +7,7 @@ function Contact() {
     <>
       <div name="Contacts" className="w-screen p-5 flex gap-10 p-10 flex justify-center items-center relative top-[15vh] md:top-0 relative">
         <div className=" hidden sm:hidden md:flex flex-col h-[90vh] w-[45vw] justify-center items-center gap-3  ">
-            <h2 className="font-bold text-[4vh]  ;">contact me </h2>
+            <h2 className="font-bold text-[4vh]  ;">Contact me..! </h2>
             <p>Lorem ipsumt molestias autem aperiam tenetur tempora assumenda?</p>
             <motion.img
             animate={{

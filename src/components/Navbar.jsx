@@ -115,7 +115,7 @@ function Navbar() {
               onClick={() => setMenu(!menu)}
               className="md:hidden relative z-100"
             >
-              <img className="h-10 " src={menu ? cross : menuimg} alt="" />
+              <img className="h-10  text-white invert brightness-0 contrast-100" src={menu ? cross : menuimg} alt="" />
             </div>
           </div>
         </div>
