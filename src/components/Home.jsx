@@ -7,7 +7,7 @@ import node from "../assets/images/nodedotjs.svg";
 import mongo from "../assets/images/mongodb.svg";
 import express from "../assets/images/express.svg";
 import resume from "../assets/images/resume.pdf";
-import certificate from "../assets/images/mernCertificate.pdf";
+import certificate from "../assets/images/MernCertificate.pdf";
 import tron from "../assets/images/Tron.png";
 
 
