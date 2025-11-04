@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "motion/react";
 import { ReactTyped, Typed } from "react-typed";
 
-import reactpng from "../assets/images/react2.png";
-import node from "../assets/images/node2.png";
-import mongo from "../assets/images/mongo2.png";
-import express from "../assets/images/express2.png";
+import reactpng from "../assets/images/react.svg";
+import node from "../assets/images/nodedotjs.svg";
+import mongo from "../assets/images/mongodb.svg";
+import express from "../assets/images/express.svg";
 import resume from "../assets/images/resume.pdf";
 import certificate from "../assets/images/mernCertificate.pdf";
 import tron from "../assets/images/Tron.png";
