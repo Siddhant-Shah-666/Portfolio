@@ -61,27 +61,27 @@ function Projects() {
                   and project workflows.
                 </p>
 
-                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className=" space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
-                    Implemented **secure JWT-based authentication** and
-                    **Role-Based Access Control (RBAC)**.
+                    Implemented <strong>secure JWT-based authentication</strong> and
+                    <strong>Role-Based Access Control (RBAC)</strong>.
                   </li>
                   <li className="pl-2">
-                    Integrated **real-time chat** functionality for seamless
+                    Integrated <strong>real-time chat</strong> functionality for seamless
                     team communication.
                   </li>
                   <li className="pl-2">
-                    Features a **mobile-friendly and responsive UI** with
-                    advanced styling effects (Glassmorphism and **Vanta.js**
+                    Features a <strong>mobile-friendly and responsive UI</strong> with
+                    advanced styling effects (Glassmorphism and <strong>Vanta.js</strong>
                     backgrounds).
                   </li>
                   <li className="pl-2">
-                    Developed an **interactive dashboard** offering key **ticket
-                    analytics** and a project overview.
+                    Developed an <strong>interactive dashboard</strong> offering key <strong>ticket
+                    analytics</strong> and a project overview.
                   </li>
                   <li className="pl-2">
-                    Core functionality includes **ticket creation, assignment,
-                    and progress tracking** through the full lifecycle.
+                    Core functionality includes <strong>ticket creation, assignment,
+                    and progress tracking</strong> through the full lifecycle.
                   </li>
                 </ul>
               </h6>
@@ -129,17 +129,17 @@ function Projects() {
                   and scheduling.
                 </p>
 
-                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className=" space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
-                    Built dynamic **seat booking and route scheduling** using
-                    **Node.js** and **MongoDB**.
+                    Built dynamic <strong>seat booking and route scheduling</strong> using
+                    <strong>Node.js</strong> and <strong>MongoDB</strong>.
                   </li>
                   <li className="pl-2">
-                    Implemented **user authentication** and **booking history
-                    tracking**.
+                    Implemented <strong>user authentication</strong> and <strong>booking history
+                    tracking</strong>.
                   </li>
                   <li className="pl-2">
-                    Added comprehensive **admin features** for managing buses,
+                    Added comprehensive <strong>admin features</strong> for managing buses,
                     routes, and user data efficiently.
                   </li>
                 </ul>

@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
       <footer className="w-screen flex flex-col justify-center items-center p-5 relative top-[15vh] md:top-0">
-        <ul className="h-15 w-[60vw]   flex list-none justify-center items-center space-x-2 border-b-2 mb-7">
+        <ul className="h-15 w-[60vw]   flex list-none justify-center items-center space-x-2 border-white border-b-2 mb-7">
           <li>
             <img className="h-10 w-10 " src={insta} alt="" />
           </li>

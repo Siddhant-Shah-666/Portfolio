@@ -1,15 +1,13 @@
 import React from "react";
 import { motion } from "motion/react";
 import { ReactTyped, Typed } from "react-typed";
-
-import reactpng from "../assets/images/react.svg";
-import node from "../assets/images/nodedotjs.svg";
-import mongo from "../assets/images/mongodb.svg";
-import express from "../assets/images/express.svg";
+import { default as ReactIcon } from "../assets/images/react.svg?react";
+import { default as Node } from "../assets/images/nodedotjs.svg?react";
+import { default as Mongo } from "../assets/images/mongodb.svg?react";
+import { default as Express } from "../assets/images/express.svg?react";
 import resume from "../assets/images/resume.pdf";
 import certificate from "../assets/images/MernCertificate.pdf";
 import tron from "../assets/images/Tron.png";
-
 
 const infoContainerVariant = {
   hidden: { opacity: 0 },
@@ -84,24 +82,22 @@ function Home() {
             variants={infoItemVariants}
             className=" mt-4 mb-4 md:mt-10 mb-5 text-sm md:text-md px-5 text-justify text-white font-semibold text-shadow-md"
           >
-            I’m a passionate MERN stack developer with strong skills in **HTML,
-            CSS, JavaScript, PHP, MySQL, Node.js, and MongoDB**. I enjoy building
-            responsive and dynamic web applications that provide a smooth user
-            experience. Currently, I’m working on projects like a Bug tracking , a Bus e-ticketing system, and an E-commerce platform. I'm
-            constantly learning and improving my skills, especially in React and
-            modern web technologies, to stay updated with the latest trends in
-            web development.
+            I’m a passionate MERN stack developer with strong skills in <strong>HTML,
+            CSS, JavaScript, PHP, MySQL, Node.js, and MongoDB</strong>. I enjoy
+            building responsive and dynamic web applications that provide a
+            smooth user experience. Currently, I’m working on projects like a
+            Bug tracking , a Bus E-ticketing system, and an E-commerce platform.
+            I'm constantly learning and improving my skills, especially in React
+            and modern web technologies, to stay updated with the latest trends
+            in web development.
           </motion.h6>
-          <div
-            
-            className="h-[10vh] w-[100vw] mt-15 md:h-15 md:w-120  flex flex-col justify-center items-center md:flex-row md:justify-between  "
-          >
-            <div className="w-[80vw] md:w-[25vw] h-15 flex gap-3">
+          <div className="h-[20vh] w-[100vw] mt-15 md:h-[25vh] md:w-120  flex flex-col justify-center items-center  gap-3  ">
+            <div className="w-[100vw] md:w-[25vw] h-15 flex gap-3">
               <a
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-[30vw] md:w-[10vw] bg-gray-300 rounded-full p-2 items-center shadow-lg"
+                className="h-10 w-[30vw] md:w-[10vw] bg-gray-300 rounded-full p-2  flex justify-center items-center   shadow-lg"
               >
                 RESUME
               </a>
@@ -110,13 +106,16 @@ function Home() {
                 href={certificate}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10  w-[30vw] md:w-[10vw] bg-gray-300 rounded-full p-2 items-center shadow-lg"
-              
-                >CERTIFICATE
+                className="h-10  w-[30vw] md:w-[10vw] bg-gray-300 rounded-full p-2  flex  justify-center items-center  shadow-lg"
+              >
+                CERTIFICATE
               </div>
             </div>
 
-            <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-center space-y-2">
+            <motion.div
+              variants={infoItemVariants}
+              className="flex flex-col justify-center items-center space-y-2"
+            >
               <motion.h3 className="ml-3">Workink on</motion.h3>
               <motion.ul
                 variants={skillContainerVariant}
@@ -125,16 +124,16 @@ function Home() {
                 className="h-15 w-50  flex list-none justify-center items-center space-x-2"
               >
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={reactpng} alt="" />
+                  <ReactIcon className="h-9 w-10 text-cyan-300" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={node} alt="" />
+                  <Node className="h-9 w-10 text-cyan-300" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10 " src={express} alt="" />
+                  <Express className="h-9 w-10 text-cyan-300" />
                 </motion.li>
                 <motion.li variants={skillItemVariants}>
-                  <img className="h-9 w-10" src={mongo} alt="" />
+                  <Mongo className="h-9 w-10 text-cyan-300" />
                 </motion.li>
               </motion.ul>
             </motion.div>
