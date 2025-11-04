@@ -61,7 +61,7 @@ function Projects() {
                   and project workflows.
                 </p>
 
-                <ul className=" space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
                     Implemented <strong>secure JWT-based authentication</strong> and
                     <strong>Role-Based Access Control (RBAC)</strong>.
@@ -123,13 +123,13 @@ function Projects() {
               <h3 className="text-2xl font-bold  text-center ">
                 Retro Bus - An E-ticketing website
               </h3>
-              <h6 className="hidden md:block text-sm md:text-md md:text-semibold text-justify text-cyan-300">
+              <h6 className="hidden md:block text-sm md:text-md md:text-s text-justify text-cyan-300">
                 <p className="text-sm md:text-md text-justify text-cyan-300 mb-4">
                   An online platform for easy and automated bus ticket booking
                   and scheduling.
                 </p>
 
-                <ul className=" space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
                     Built dynamic <strong>seat booking and route scheduling</strong> using
                     <strong>Node.js</strong> and <strong>MongoDB</strong>.
