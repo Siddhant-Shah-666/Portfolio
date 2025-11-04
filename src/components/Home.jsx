@@ -93,8 +93,8 @@ function Home() {
             web development.
           </motion.h6>
 
-          <div className="h-[20vh] w-[100vw] mt-15 md:h-[25vh] md:w-120  flex flex-col justify-center items-start  gap-3  ">
-            <div className="w-[100vw] md:w-[25vw] h-15 flex gap-3">
+          <div className="px-4 mt-15  flex flex-col justify-center items-start  gap-3  ">
+            <div className=" flex gap-3">
               <a
                 href={resume}
                 target="_blank"
