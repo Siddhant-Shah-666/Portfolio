@@ -61,9 +61,9 @@ function Projects() {
                   and project workflows.
                 </p>
 
-                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className="list-disc list-outside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
-                    Implemented <strong>secure JWT-based authentication</strong> and
+                    Implemented <strong>secure JWT-based authentication</strong> and 
                     <strong>Role-Based Access Control (RBAC)</strong>.
                   </li>
                   <li className="pl-2">
@@ -73,7 +73,7 @@ function Projects() {
                   <li className="pl-2">
                     Features a <strong>mobile-friendly and responsive UI</strong> with
                     advanced styling effects (Glassmorphism and <strong>Vanta.js</strong>
-                    backgrounds).
+                     backgrounds).
                   </li>
                   <li className="pl-2">
                     Developed an <strong>interactive dashboard</strong> offering key <strong>ticket
@@ -129,9 +129,9 @@ function Projects() {
                   and scheduling.
                 </p>
 
-                <ul className="list-disc list-inside space-y-2 text-sm md:text-md text-cyan-300">
+                <ul className="list-disc list-outside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
-                    Built dynamic <strong>seat booking and route scheduling</strong> using
+                    Built dynamic <strong>seat booking and route scheduling</strong> using 
                     <strong>Node.js</strong> and <strong>MongoDB</strong>.
                   </li>
                   <li className="pl-2">

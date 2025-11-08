@@ -46,7 +46,7 @@ const skillItemVariants = {
         {
             id:2,
             logo:css,
-            name:"Css"
+            name:"CSS"
         },
         {
             id:3,

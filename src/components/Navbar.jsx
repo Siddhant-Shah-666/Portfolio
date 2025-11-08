@@ -107,7 +107,7 @@ function Navbar() {
                   spy={true}
                   activeClass="active"
                 >
-                  Contacts
+                  Contact
                 </Link>
               </motion.li>
             </motion.ul>
@@ -171,7 +171,7 @@ function Navbar() {
                   offset={-30}
                   activeClass="active"
                 >
-                  Contacts
+                  Contact
                 </Link>
               </motion.li>
             </motion.ul>

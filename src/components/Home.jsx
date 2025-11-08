@@ -85,12 +85,12 @@ function Home() {
             className=" mt-4 mb-4 md:mt-10 mb-5 text-sm md:text-md px-5 text-justify text-white font-semibold text-shadow-md"
           >
             I’m a passionate <strong>MERN stack</strong> developer with strong skills in 
-  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, 
+  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> ,  
   <strong>MySQL</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I enjoy building 
-  <strong>responsive</strong> and <strong>dynamic web applications</strong> that provide a 
+  <strong> responsive</strong> and <strong>dynamic web applications</strong> that provide a  
   <strong>smooth user experience</strong>. Currently, I’m working on projects like a 
-  <strong>Bug tracking</strong> system, a <strong>Bus e-ticketing</strong> system, and an 
-  <strong>E-commerce</strong> platform. I'm constantly learning and improving my skills, 
+  <strong> Bug tracking</strong> system, a <strong>Bus e-ticketing</strong> system, and an 
+  <strong> E-commerce</strong> platform. I'm constantly learning and improving my skills, 
   especially in <strong>React</strong> and <strong>modern web technologies</strong>, to stay updated 
   with the latest trends in <strong>web development</strong>.
           </motion.h6>
@@ -118,7 +118,7 @@ function Home() {
 
 
             <motion.div variants={infoItemVariants} className="flex flex-col justify-center items-start space-y-2 ">
-              <motion.h3 className="ml-3">Workink on</motion.h3>
+              <motion.h3 className="ml-3">Working on</motion.h3>
               <motion.ul
                 variants={skillContainerVariant}
                 initial="hidden"
