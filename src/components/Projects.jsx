@@ -106,7 +106,7 @@ function Projects() {
 
           <motion.div
             variants={projectContainerVariant}
-            custom={300}
+            custom={-300}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
