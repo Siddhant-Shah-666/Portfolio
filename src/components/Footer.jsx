@@ -23,7 +23,7 @@ function Footer() {
           </li>
         </ul>
         <h3 className="font-bold text-md md:text-xl">A Developer Dedicated to Clean Code and Great Design.</h3>
-        <h4 className=" text-s md:text-md text-white">Designed and Developed by <strong>Siddhant Shah.</strong></h4>
+        {/* <h4 className=" text-s md:text-md text-white">Designed and Developed by <strong>Siddhant Shah.</strong></h4> */}
       </footer>
     </>
   );

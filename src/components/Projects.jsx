@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
+import tronss from "../assets/images/tronss.png"
+import retross from "../assets/images/retross.png"
 
 function Projects() {
   const projectContainerVariant = {
@@ -46,7 +48,7 @@ function Projects() {
               variants={projectItemVariants}
               className="w-[80vw] h-[30vh] md:w-[45vw] md:h-[40vh] bg-red-600 rounded-md  justify-center items-center order-1"
             >
-              <img src="" alt="" />
+              <img src={tronss} alt="" />
             </motion.div>
             <motion.div
               variants={projectItemVariants}
@@ -64,7 +66,7 @@ function Projects() {
                 <ul className="list-disc list-outside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
                     Implemented <strong>secure JWT-based authentication</strong> and 
-                    <strong>Role-Based Access Control (RBAC)</strong>.
+                    <strong> Role-Based Access Control (RBAC)</strong>.
                   </li>
                   <li className="pl-2">
                     Integrated <strong>real-time chat</strong> functionality for seamless
@@ -72,8 +74,8 @@ function Projects() {
                   </li>
                   <li className="pl-2">
                     Features a <strong>mobile-friendly and responsive UI</strong> with
-                    advanced styling effects (Glassmorphism and <strong>Vanta.js</strong>
-                     backgrounds).
+                    advanced styling effects (Glassmorphism and <strong>Vanta.js </strong>
+                    backgrounds).
                   </li>
                   <li className="pl-2">
                     Developed an <strong>interactive dashboard</strong> offering key <strong>ticket
@@ -104,7 +106,7 @@ function Projects() {
 
           <motion.div
             variants={projectContainerVariant}
-            custom={400}
+            custom={-400}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -114,7 +116,7 @@ function Projects() {
               variants={projectItemVariants}
               className="w-[80vw] h-[30vh] md:w-[45vw] md:h-[40vh] bg-red-600 rounded-md  justify-center items-center  order-1 md:order-2"
             >
-              <img src="" alt="" />
+              <img src={retross} alt="" />
             </motion.div>
             <motion.div
               variants={projectItemVariants}
@@ -132,7 +134,7 @@ function Projects() {
                 <ul className="list-disc list-outside space-y-2 text-sm md:text-md text-cyan-300">
                   <li className="pl-2">
                     Built dynamic <strong>seat booking and route scheduling</strong> using 
-                    <strong>Node.js</strong> and <strong>MongoDB</strong>.
+                    <strong> Node.js</strong> and <strong>MongoDB</strong>.
                   </li>
                   <li className="pl-2">
                     Implemented <strong>user authentication</strong> and <strong>booking history
