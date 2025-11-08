@@ -49,7 +49,7 @@ function App() {
       </div>
 
      
-      <div className="w-full relative z-10 font-bold overflow-y-hidden">
+      <div className="w-full relative z-10 font-bold overflow-x-hidden">
         <Navbar />
         <Home />
         <Skills />

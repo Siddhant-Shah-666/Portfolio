@@ -38,7 +38,7 @@ function Projects() {
         <div className="grid grid-cols-1 gap-5">
           <motion.div
             variants={projectContainerVariant}
-            custom={400}
+            custom={'100vw'}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -46,7 +46,7 @@ function Projects() {
           >
             <motion.div
               variants={projectItemVariants}
-              className="w-[80vw] h-[30vh] md:w-[45vw] md:h-[40vh] bg-red-600 rounded-md  justify-center items-center order-1"
+              className="w-[80vw] md:w-[45vw]  bg-red-60 rounded-md  justify-center items-center order-1"
             >
               <img src={tronss} alt="" />
             </motion.div>
@@ -106,7 +106,7 @@ function Projects() {
 
           <motion.div
             variants={projectContainerVariant}
-            custom={-400}
+            custom={'-100vw'}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -114,7 +114,7 @@ function Projects() {
           >
             <motion.div
               variants={projectItemVariants}
-              className="w-[80vw] h-[30vh] md:w-[45vw] md:h-[40vh] bg-red-600 rounded-md  justify-center items-center  order-1 md:order-2"
+              className="w-[80vw]  md:w-[45vw]  bg-red-60 rounded-md  justify-center items-center  order-1 md:order-2"
             >
               <img src={retross} alt="" />
             </motion.div>
