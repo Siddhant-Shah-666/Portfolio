@@ -38,7 +38,7 @@ function Projects() {
         <div className="grid grid-cols-1 gap-5">
           <motion.div
             variants={projectContainerVariant}
-            custom={'100vw'}
+            custom={300}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -106,7 +106,7 @@ function Projects() {
 
           <motion.div
             variants={projectContainerVariant}
-            custom={'-100vw'}
+            custom={300}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
